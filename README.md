@@ -9,5 +9,5 @@ Also, You need to first insert data of the admins into the users table manually,
 # How to run
 If you want to run the application, then run the FlexTrainer.exe file in the bin/Debug forlder. If you want to run the solution then you should run the FlexTrainer.sln file (Visual Studio solution file). After opening the solution in the Microsoft Visual Studio, copy and paste your connection string to all the cs files where it is needed (Comments are added where it is needed).
 
-# Problem you may face
+# Problems you may face
 While copying and pasting the connection string, if the last attribute is Trust Server Certificate = true, then remove the spaces between it to make it look like: TrustServerCertificate=true. Also, While running the application, do not enter ' into the textboxes, as it may cause exceptions while submiting. 
