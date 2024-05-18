@@ -3,7 +3,7 @@ FlexTrainer is a C# Winforms application developed in Visual Studio and use MS S
 The application is an implementation of Gym Management and Fitness tracking system in which different types of users like Gym members, trainers, gym owners, and administrators can join the available gyms, get approval, create or follow existing workout and diet plans, book trainers, etc.
 
 ## Before Running
-Remember to create all the necessary tables and triggers using the FlexTrainerTables.sql file.
+Remember to create all the necessary tables and triggers using the * *FlexTrainerTables.sql* * file.
 Also, You need to first insert data of the admins into the users table manually, otherwise it could cause problems. 
 
 ## How to run
