@@ -13,6 +13,7 @@ namespace FlexTrainer
 {
     public partial class Form2 : Form
     {
+        //this will be used when the user will click the "Go Back" Button
         Form1 prev;
         public Form2(Form1 prev)
         {
