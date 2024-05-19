@@ -1,6 +1,7 @@
 CREATE DATABASE PROJECT;
 use PROJECT;
 
+-- Creating the necessary tables for the application
 create table users(
 	username varchar(20) primary key,
 	Name varchar(50) not null,
