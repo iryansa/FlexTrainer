@@ -64,11 +64,10 @@ CREATE TABLE appointmentTable (
 	time_slot datetime NOT NULL,
 	Status varchar(20) NOT NULL 
 
-	FOREIGN KEY (trainer_username) REFERENCES users(username),
-	--FOREIGN KEY (member_username) REFERENCES users(username)
+	FOREIGN KEY (trainer_username) REFERENCES users(username)
 );
 
--- create first ***********************
+
 create table trainerFeedback (
 	apt_id INT PRIMARY KEY,
 	rating INT NOT NULL,
@@ -119,7 +118,7 @@ create table membergym(
 
 	foreign key(username) references users(username),
 	primary key(username, gymname)
-	)
+	);
 	
 create table trainergym(
 	username varchar(20),
@@ -128,11 +127,11 @@ create table trainergym(
 
 	foreign key(username) references users(username),
 	primary key(username, gymname)
-	)
+	);
 
 
 
-		-- Create Audit Trail Table
+
 CREATE TABLE AuditTrail (
     AuditTrailID INT IDENTITY PRIMARY KEY,
     TableName VARCHAR(50) NOT NULL,
