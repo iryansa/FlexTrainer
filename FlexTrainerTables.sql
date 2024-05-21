@@ -132,7 +132,7 @@ create table trainergym(
 
 
 
-
+--creating audit trail table
 CREATE TABLE AuditTrail (
     AuditTrailID INT IDENTITY PRIMARY KEY,
     TableName VARCHAR(50) NOT NULL,
@@ -140,8 +140,8 @@ CREATE TABLE AuditTrail (
     AuditDateTime DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
-drop table AuditTrail
 
+--creating the required tables for the audit trail
 CREATE TRIGGER Users_AuditTrigger
 ON users
 AFTER INSERT, UPDATE, DELETE
